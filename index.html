@@ -6,17 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Inicial</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
     <h1>Projeto Inicial</h1>
     <div>
         <h4>Aula de DSA2</h4>
-        <label for="nome">Digite seu nome: </label>
-        <input type="text" id="nome" name="nome"
+        <form>
+            <div class="mb-1">
+                <label for="nome">Digite seu nome: </label>
+                <input type="text" id="nome" name="nome"
                    placeholder="Digite seu nome...">
-        <input type="button" value="Clique aqui..."
-         id="botao" name="botao" >
+            </div>
+            
+        </form>
+        <form>
+        <div class="mb-1">
+            <label for="email">E-mail: </label>
+            <input type="text" id="email" name="email"
+               placeholder="Digite seu e-mail...">
+        </div>
+    </form>
+    <form>
+        <div class="mb-1">
+            <label for="telefone">Telefone : </label>
+            <input type="text" id="telefone" name="telefone"
+               placeholder="Digite seu telefone...">
+        </div>
+    </form>
+    <form>
+    <div class="mb-1">
+        <label for="cep">CEP : </label>
+        <input type="text" id="cep" name="cep"
+           placeholder="Digite seu CEP...">
+    </div>
+    </form>
+    <form>
+       <div class="mb-1">
+       <label for="logradouro">Logradouro : </label>
+       <input type="text" id="logradouro" name="logradouro"
+          placeholder="Digite seu Logradouro...">
+    </div>
+    </form>
+    <form>
+    <div class="mb-1">
+    <label for="numero">Número : </label>
+    <input type="text" id="numero" name="numero"
+      placeholder="Digite o Numero...">
+    </div>
+    </form>
+    <form>
+      <div class="mb-1">
+    <label for="complemento">Complemento : </label>
+    <input type="text" id="complemento" name="complemento"
+       placeholder="Digite seu Complemento...">
+    </div>
+</form>
+    <form>
+     <div class="mb-1">
+    <label for="bairro">Bairro : </label>
+    <input type="text" id="bairro" name="bairro"
+        placeholder="Digite seu Bairro...">
+    </div>
+    </form>
+    <form>
+        <div class="mb-1">
+      <label for="cidade">Cidade : </label>
+      <input type="text" id="cidade" name="cidade"
+         placeholder="Digite sua Cidade...">
+      </div>
+    </form>
+    <form>
+     <div class="mb-1">
+  <label for="estado">Estado : </label>
+  <input type="text" id="estado" name="estado"
+     placeholder="Digite seu Estado...">
+  </div>
+<input type="button" value="Clique aqui..."
+class="btn-primary" id="botao" name="botao" >
+</form>
+
+
+        <div class="m-2 p-1 text-center" id="saida-de-dados">
+
+        </div>
     </div>
     <script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
