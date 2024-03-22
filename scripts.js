@@ -15,6 +15,12 @@ var estado = document.getElementById("estado");
 function alertar(){
     // alert("O nome inserido foi: " + nome.value);
 
+    const url = `https://viacep.com.br/ws/${cep.value}/json/`;
+
+    fetch(url)
+    .then(resposta=>resposta.json())
+    .then(dados=>alert(dados.logradouro))
+
 
     saida.innerText = "Nome:" + nome.value +
             "\n E-mail:" + email.value +
