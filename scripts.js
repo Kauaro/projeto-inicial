@@ -15,11 +15,30 @@ var estado = document.getElementById("estado");
 function alertar(){
     // alert("O nome inserido foi: " + nome.value);
 
+    if(cep.value.length < 8){
+        alert("CEP inválido!");
+        return;
+    }
+
+     // remover o traço do CEP
+    cep.value = cep.value.replace('-','');
+
     const url = `https://viacep.com.br/ws/${cep.value}/json/`;
 
     fetch(url)
-    .then(resposta=>resposta.json())
-    .then(dados=>alert(dados.logradouro))
+    .then(function(resposta){
+    return resposta.json();
+    })
+    .then(function(dados){
+        logradouro.value = dados.logradouro;
+        complemento.value = dados.complemento;
+        bairro.value = dados.bairro;
+        cidade.value = dados.localidade;
+        estado.value = dados.uf;
+    })
+    .catch(function(e){
+        alert(e.message());
+    })
 
 
     saida.innerText = "Nome:" + nome.value +
